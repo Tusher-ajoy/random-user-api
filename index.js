@@ -7,7 +7,7 @@ const port = 5000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello, it's working");
+  res.send("Hello, it's working. To see all data go to /api/v1/user/all");
 });
 
 app.use("/api/v1/user", userRouter);
