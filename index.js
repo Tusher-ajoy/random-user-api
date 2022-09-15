@@ -16,4 +16,4 @@ app.all("*", (req, res) => {
   res.send("No router found.");
 });
 
-app.listen(port || process.env.PORT);
+app.listen(process.env.PORT || port);
